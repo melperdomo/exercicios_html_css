@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Testes com formulários</h1>
+    <form action="form-01.php" method="POST" autocomplete="on">
+        <p>
+            <label for="usuario">Usuário:</label>
+            <input type="text" name="usuario" id="idusuario" minlength="3" maxlength="10" size="12" placeholder="@usuario" required>
+        </p>
+        <p>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="idsenha" minlength="8" size="10" placeholder="senha" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar Dados">
+        </p>
+    </form>
+</body>
+</html>
