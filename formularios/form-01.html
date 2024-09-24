@@ -7,15 +7,76 @@
 </head>
 <body>
     <h1>Testes com formulários</h1>
-    <form action="form-01.php" method="POST" autocomplete="on">
-        <p>
-            <label for="usuario">Usuário:</label>
-            <input type="text" name="usuario" id="idusuario" minlength="3" maxlength="10" size="12" placeholder="@usuario" required>
-        </p>
-        <p>
-            <label for="senha">Senha:</label>
-            <input type="password" name="senha" id="idsenha" minlength="8" size="10" placeholder="senha" autocomplete="current-password">
-        </p>
+    <form action="" method="POST" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="name-input">Nome:</label>
+                <input type="text" name="nome" id="nome-input" minlength="3" maxlength="40" required>
+            </p>
+            <p>
+                <label for="email-input">E-mail:</label>
+                <input type="email" name="email" id='email-input' autocomplete="email" required>
+            </p>
+            <p>
+                <label for="tel-input">Telefone:</label>
+                <input type="tel" name="tel" id='tel-input' autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxxx-xxxx" required>
+                <!-- O pattern é apenas uma formatação padrão, que não valida os dados informados. Esses dados podem ser validados posteriormente com JS ou PHP.-->
+            </p>
+            <p>
+                <label for="sexo-input">Sexo:</label>
+                <input type="radio" name="sexo" id="fem-input" checked>Feminino
+                <input type="radio" name="sexo" id="masc-input">Masculino
+                <!-- Quando colocamos o mesmo name no botão de radio, o usuário precisa selecionar apenas uma opção, podendo mudar a opção selecionada.-->
+            </p> 
+        </fieldset> 
+        <br>
+        <fieldset>
+            <legend>Frutas Favoritas</legend>
+            <input type="checkbox" name="fmorango" id="morango-input"><label for="morango-input">Morango</label><br>
+            <input type="checkbox" name="fmanga" id="manga-input"><label for="manga-input">Manga</label><br>
+            <input type="checkbox" name="fuva" id="uva-input"><label for="uva-input">Uva</label><br>
+            <input type="checkbox" name="fmelancia" id="melancia-input"><label for="melancia-input">Melancia</label><br>
+            <input type="checkbox" name="fcoco" id="coco-input"><label for="coco-input">Coco</label><br>
+            <input type="checkbox" name="fmangostim" id="mangostim-input"><label for="mangostim-input">Mangostim</label><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Cores</legend>
+            <input type="color" name="cor" id="cor-input">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Avaliação</legend>
+            <p>
+                <label for="mes-input">Período Letivo:</label>
+                <input type="month" name="mes" id="mes-input" value="2024-09">
+            </p>
+            <p>
+                <label for="dia-input">Dia da Prova:</label>
+                <input type="date" name="dia" id="dia-input" value="2024-09-10">
+            </p>
+            <p>
+                <label for="hora-input">Horário da Prova:</label>
+                <input type="time" name="hora" id="hora-input" required>
+            </p>
+            <p>
+                <label for="nota-input">Nota:</label>
+                <input type="number" name="nota" id="nota-input" min="0" max="10" placeholder="0 a 10" step="0.5" required>
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Dados de Acesso</legend>
+            <p>
+                <label for="usuario-input">Usuário:</label>
+                <input type="text" name="usuario" id="usuario-input" minlength="3" maxlength="10" size="12" placeholder="@usuario" required>
+            </p>
+            <p>
+                <label for="senha-input">Senha:</label>
+                <input type="password" name="senha" id="senha-input" minlength="8" size="10" placeholder="senha" autocomplete="current-password">
+            </p>
+        </fieldset>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar Dados">
