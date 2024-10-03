@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      div.conteiner {
+        display: flex;
+        background-color: lightslategray;
+        flex-direction: row-reverse;
+      }
+      div.item {
+        background-color: lightblue;
+        border: 1px solid black;
+        flex: auto;
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="conteiner">
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div>
+    </div>
+    <!--  
+        Sobre eixo principal e eixo cruzado:
+        Os itens vão seguir semmpre o main axis.
+        
+        Para flex-direction: row, o main-axis vai da esquerda para a direita, e o cross-axis vai de cima para baixo.
+        
+        Para flex-direction: row-reverse, o main-axis vai da direita pra esquerda, e o cross-axis permanece de cima pra baixo.
+        
+        Para flex-direction: column, o main-axis vai de cima para baixo, na vertical, em coluna, e o cross-axis vai da esquerda para a direita.
+        
+        Para flex-direction: column-reverse, o main-axis fica de baixo para cima, e o cross-axis da esquerda para a direita.
+
+        align-content
+        align-item
+       -->
+  </body>
+</html>
