@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Sizing</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #primeira {
+      height: 100px;
+      width: 100px;
+      background-color: blueviolet;
+      color: antiquewhite;
+      padding: 10px;
+      border: 10px solid black;
+      box-sizing: border-box;
+      /* Quando declaramos valores de padding e borda, o elemento cresce e ultrapassa a altura e largura pré definidas. A propriedade border-box força que o meu elemento tenha a largura e altura pré-definida.*/
+    }
+
+    #segunda {
+      height: 100px;
+      width: 100px;
+      background-color: darkolivegreen;
+      color: antiquewhite;
+    }
+    
+  </style>
+  <body>
+    <div id="primeira">Primeira</div>
+    <div id="segunda">Segunda</div>
+  </body>
+</html>
