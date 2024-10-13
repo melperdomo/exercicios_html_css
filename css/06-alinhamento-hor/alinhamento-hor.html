@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alinhamento Horizontal</title>
+  </head>
+  <style>
+    #primeira {
+      height: 100px;
+      width: 100px;
+      background-color: cornflowerblue;
+      margin-left: auto;
+      margin-right: auto;
+      /* se eu uso margin dessa forma, o meu elemento vai ficar centralizado, desde que o elemento naturalmente, ocupe a tela inteira, como uma div ou um parágrafo. */
+    }
+
+    p {
+      width: 50%;
+      margin: auto;
+      /* na vertical vai remover o espaçamento, porque vai ocupar o mínimo de espaço possível. Na horizontal, vai ocupar o máximo espaço possível, alinhando o elemento ao meio. */
+      text-align: center;
+    }
+
+    #segunda {
+        background-color: aquamarine;
+        margin: auto;
+        text-align: center;
+    }
+
+    img {
+      width: 80%;
+    }
+  </style>
+  <body>
+    <div id="primeira"></div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus numquam
+      quisquam aperiam eos accusantium, deleniti nesciunt. Laudantium
+      reprehenderit quam pariatur quibusdam quisquam reiciendis iure vero
+      accusantium, dicta animi, id aperiam.
+    </p>
+    <div id="segunda">
+        <img src="/css/imagens/target001.png" alt="" />
+    </div>
+  </body>
+</html>

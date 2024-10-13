@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos de Listas</title>
+    <style>
+        #primeira {
+            border: 1px solid;
+            list-style: square;
+            /* circle, square, disc, none. */
+            list-style-position: inside;
+            /* position só funciona na lista ordenada. */
+            padding: 0;
+        }
+
+        li {
+            border: 1px solid blue ;
+        }
+
+        #segunda {
+            border: 1px solid blueviolet;
+        }
+
+        ol {
+            list-style: upper-roman;
+            /* lower and upper, roman, latin or alpha. */
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="primeira">
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
+    <ul id="segunda">
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
+    <ol>
+        <li>Melissa</li>
+        <li>Paulo</li>
+        <li>Medusa</li>
+    </ol>
+</body>
+</html>

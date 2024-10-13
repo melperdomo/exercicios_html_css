@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidas Fontes</title>
+    <style>
+        .container {
+            font-size: 25px;
+            /* Se eu passar um tamanho de texto para o pai, ele aplica em todos os filhos, exceto no filho com tamanho já declarado. */
+        }
+            
+        .exemplo1 {
+            font-size: 1em;
+            /* O tamanho de fonte passa de pai pra filho, exceto em declarações específicas, como a próxima. */
+        }
+
+        .exemplo2 {
+            font-size: 2em;
+            /* em - elemento. Se eu passar 2em, o elemento terá 2x o tamanho que ele deveria ter, de acordo com o que foi declarado no elemento pai. */
+        }
+
+        .exemplo3 {
+            font-size: 2rem;
+            /* rem - root element. Se eu passar 2rem, o elemento terá 2x o tamanho do que foi declarado no elemento raiz da página. */
+        }
+    
+        /* 
+        Por defautl, a raiz dos elementos em um doc html tem os seguintes tamanhos de fonte:
+        h1	2em (32px)
+        h2	1.5em (24px)
+        h3	1.17em (18.72px)
+        h4	1em (16px)
+        h5	0.83em (13.28px)
+        h6	0.67em (10.72px)
+        p, body	1em (16px)
+        small	0.8em (12.8px)
+        */
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="exemplo1">Um exemplo de texto.</p>
+        <p class="exemplo2">Outro exemplo de texto.</p>
+    </div>
+    <p class="exemplo3">Um novo exemplo de texto.</p>
+</body>
+</html>

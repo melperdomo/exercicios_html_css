@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medidas Relativas</title>
+    <style>
+        #pink {
+            width: 50vw;
+            height: 300px;
+            background-color: pink;
+        }
+
+        #violet {
+            width: 600px;
+            height: 300px;
+            background-color: blueviolet;
+            /* 50vw, ele ocupa 50% da viewport, da tela do usuário, de forma responsiva. */
+        }
+
+        .foto {
+            width: 50%;
+            /* o filho está ocupando 50% do elemento pai.  */
+        }
+    </style>
+  </head>
+  <body>
+    <div id="pink">
+        <img class="foto" src="/css/imagens/wallpaper002.jpg" alt="" />
+    </div>
+    <div id="violet">
+        <img class="foto" src="/css/imagens/wallpaper002.jpg" />
+    </div>
+  </body>
+</html>
