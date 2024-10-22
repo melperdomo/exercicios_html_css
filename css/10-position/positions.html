@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        .quadro {
+            border: 2px solid black;
+            width: 400px;
+            height: 400px;
+        }
+
+        .quadrado {
+            /* display: block; vem por default e ocupa toda a largura do pai. */
+            /* display: inline-block; deixa os elementos ao lado, em linha. */
+            width: 100px;
+            height: 100px;
+        }
+
+        .quadrado-red {
+            background-color: red;
+            position: relative; 
+            right: 20px;
+            top: 20px;
+            /* position: static; vem por default, o elemento se encaixa embaixo ou ao lado de outro elemento. */
+            /* position: relative; relativo ao static. Pode acrescentar left, right, top, bottom. */
+        }
+
+        .quadrado-purple {
+            
+            background-color: blueviolet;
+        }
+
+        .quadrado-yellow {
+            background-color: yellow;
+            position: relative;
+            left: 300px;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="quadro">
+        <div class="quadrado quadrado-red"></div>
+        <div class="quadrado quadrado-purple"></div>
+        <div class="quadrado quadrado-yellow"></div>
+    </div>
+</body>
+</html>
