@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 10px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    flex-wrap: wrap;
+}
+
+#ibagem {
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+    background-color: blueviolet;
+}
+
+#form-login {
+    width: 300px;
+    height: 350px;
+    background-color: aquamarine;
+}
