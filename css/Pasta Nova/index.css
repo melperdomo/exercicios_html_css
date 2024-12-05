@@ -23,3 +23,34 @@ body {
     height: 350px;
     background-color: aquamarine;
 }
+
+
+
+/* 
+Sobre animações:
+
+Antes do elemento, coloque um @keyframes nomeDaAnimação {}
+
+No elemento, configure:
+animation-name: ;
+animation-duration: 0s;
+animation-delay: 2s; Atrasa o início da animação em segundos.
+animation-iteration-count: 0; determina um looping de 0x ou use infinite.
+animation-direction: reverse; reverte do estado final para o estado inicial; alternate: se você determinar mais de 1x, ele alterna os estados; alternate-reverse.
+animation-fill-mode: fowards, backwards, both; deixa o frame da animação estático na tela, sem voltar ao estado inicial do elemento. Use fowards para as caixas do site.
+animation-timing-function: linear, ease, ease-in, ease-out, ease-in-out; Diz respeito a velocidade do efeito. 
+
+Shorthand:
+animation: name duration timing-function delay iteration-count direction fill-mode;
+
+
+Transitions:
+
+
+
+
+
+
+
+
+*/
